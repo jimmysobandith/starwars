@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 
 
 import { HomePage } from '../home/home';
-import { FilmPage} from "../film/film";
-import { PeoplePage} from "../people/people";
-import { VehiculePage} from "../vehicule/vehicule";
+import { FilmPage } from '../film/film';
+import { PeoplePage } from '../people/people';
+import { VehiculePage } from '../vehicule/vehicule';
 
 @Component({
   templateUrl: 'tabs.html'
