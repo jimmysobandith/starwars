@@ -7,6 +7,9 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { VehiculePage } from '../pages/vehicule/vehicule';
+import { PeoplePage } from '../pages/people/people';
+import { FilmPage } from '../pages/film/film';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -14,8 +17,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
+    FilmPage,
+    PeoplePage,
+    VehiculePage,
     HomePage,
     TabsPage
   ],
@@ -26,8 +30,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
+    FilmPage,
+    VehiculePage,
+    PeoplePage,
     HomePage,
     TabsPage
   ],
