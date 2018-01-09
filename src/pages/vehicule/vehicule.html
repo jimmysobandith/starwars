@@ -1,17 +1,14 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Véhicule
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content>
+    <ion-navbar color="dark">
+      <ion-title color="primary">Véhicules</ion-title>
+    </ion-navbar>
+  </ion-header>
+   
+  <ion-content class="background">
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-
-    </ion-item>
+    <button class="boutton" ion-item *ngFor="let vehicule of (vehicules | async)?.results" (click)="openDetails(vehicule)">
+      {{ vehicule.name }}
+    </button>
   </ion-list>
-</ion-content>
+   
+  </ion-content>

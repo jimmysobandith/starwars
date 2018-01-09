@@ -1,12 +1,12 @@
 <ion-header>
-  <ion-navbar color="primary">
-    <ion-title>Films</ion-title>
+  <ion-navbar color="dark">
+    <ion-title color="primary">Films</ion-title>
   </ion-navbar>
 </ion-header>
  
 <ion-content>
 <ion-list>
-  <button ion-item *ngFor="let film of (films | async)?.results" (click)="openDetails(film)">
+  <button class="boutton" ion-item *ngFor="let film of (films | async)?.results" (click)="openDetails(film)">
     {{ film.title }}
   </button>
 </ion-list>

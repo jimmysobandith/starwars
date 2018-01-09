@@ -1,13 +1,11 @@
 <ion-header>
-  <ion-navbar color="primary">
+  <ion-navbar color="#000000">
     <ion-title>{{ film.title }}</ion-title>
   </ion-navbar>
 </ion-header>
  
 <ion-content padding>
-  <ion-card>
-    <ion-card-content>
-      {{ film.opening_crawl }}
-    </ion-card-content>
-  </ion-card>
+  <h1>Directeur : {{film.director}}</h1>
+  <h2>Producteur: {{ film.producer }}</h2>
+  {{ film.opening_crawl }}
 </ion-content>
