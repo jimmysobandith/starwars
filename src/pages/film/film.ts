@@ -9,6 +9,10 @@ export class FilmPage {
 
   constructor(public navCtrl: NavController) {
 
+
+
   }
 
 }
+
+
