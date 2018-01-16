@@ -12,8 +12,9 @@ page-home {
     margin-top: 10px;
     margin-bottom: 20px;
   }
-font{
+Police{
   color:white;
+  font-family: "Lucida Console", Monospace, serif;
 }
   h2
   {
@@ -21,7 +22,7 @@ font{
   }
   .contenu
   {
-    background-image: url("../../assets/wallpaper.jpg");
+    background-image: url("../../assets/homeWP.jpg");
     background-size: (100% 100%);
 
   }
