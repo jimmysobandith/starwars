@@ -14,9 +14,9 @@
         </ion-refresher-content>
       </ion-refresher>
 <ion-list>
- <!-- <button class="boutton" ion-item *ngFor="let people of peoples" (click)="openDetails(people)">
+  <button class="boutton" ion-item *ngFor="let people of (peoples | async)?.results" (click)="openDetails(people)">
     {{ people.name }}
-  </button>-->
+  </button>
 </ion-list>
  
 </ion-content>
