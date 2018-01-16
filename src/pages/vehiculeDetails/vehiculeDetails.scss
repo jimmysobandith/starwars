@@ -1,4 +1,4 @@
-page-vehicule {
+page-vehicule-details {
 
     .boutton
     {
@@ -6,5 +6,11 @@ page-vehicule {
         color: #FFE830;
         text-transform: uppercase;
         font-weight: 800;
+    }
+    .contenu
+    {
+      background-image: url("../../assets/fd.jpg");
+      background-size: (100% 100%);
+
     }
 }

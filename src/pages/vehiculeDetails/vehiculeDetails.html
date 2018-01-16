@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar color="#000000">
+    <ion-title>{{ vehicule.name }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="contenu">
+  <ion-card>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="../../assets/Rebel.jpg"/>
+      </ion-avatar>
+  <h1 text-wrap>Classe : {{ vehicule.vehicle_class }}</h1>
+    </ion-item>
+
+    <ion-card-content>
+  <p>Nombre de passager : {{ vehicule.passengers }}</p>
+  <p>Le pilote attribué au véhicule : {{ vehicule.pilots}}</p>
+  <p>L'usine de fabrication : {{ vehicule.manufacturer}}</p>
+  <p> Capacité du cargo : {{ vehicule.cargo_capacity}}</p>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>
