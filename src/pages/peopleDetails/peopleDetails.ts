@@ -6,9 +6,9 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'peopleDetails.html',
 })
 export class PeopleDetailsPage {
-  film: any;
+  people: any;
  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.film = this.navParams.data.film;
+    this.people = this.navParams.data.people;
   }
 }
