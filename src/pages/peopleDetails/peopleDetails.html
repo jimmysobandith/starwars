@@ -1,14 +1,14 @@
 <ion-header>
-  <ion-navbar color="dark">
-    <ion-title color="primary">Personnages</ion-title>
+  <ion-navbar color="#000000">
+    <ion-title>{{ people.name }}</ion-title>
   </ion-navbar>
 </ion-header>
- 
-<ion-content class="background">
-<ion-list>
-  <button class="boutton" ion-item *ngFor="let personnage of (personnages | async)?.results" (click)="openDetails(personnage)">
-    {{ personnage.name }}
-  </button>
-</ion-list>
- 
+  
+<ion-content padding>
+  <h1>Nom & Prénom : {{ people.name }}</h1>
+  <p>Taille : {{ people.height }}</p>
+  <p>Poid : {{ people.mass }}</p>
+  <p>Couleur de cheveu : {{ people.hair_color }}</p>
+  <p>Couleur des yeux : {{ people.eye_color }}</p>
+  <p>Sexe : {{ people.gender }}</p>
 </ion-content>

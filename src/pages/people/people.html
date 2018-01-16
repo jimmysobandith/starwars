@@ -6,8 +6,8 @@
  
 <ion-content class="background">
 <ion-list>
-  <button class="boutton" ion-item *ngFor="let personnage of (personnages | async)?.results" (click)="openDetails(personnage)">
-    {{ personnage.name }}
+  <button class="boutton" ion-item *ngFor="let people of (peoples | async)?.results" (click)="openDetails(people)">
+    {{ people.name }}
   </button>
 </ion-list>
  

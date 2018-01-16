@@ -12,6 +12,7 @@ import { VehiculePage } from '../pages/vehicule/vehicule';
 import { PeoplePage } from '../pages/people/people';
 import { FilmPage } from '../pages/film/film';
 import { FilmDetailsPage } from '../pages/filmDetails/filmDetails';
+import { PeopleDetailsPage } from '../pages/peopleDetails/peopleDetails';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -25,6 +26,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     VehiculePage,
     ContactPage,
     FilmDetailsPage,
+    PeopleDetailsPage,
     HomePage,
     TabsPage
   ],
@@ -42,6 +44,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     PeoplePage,
     FilmDetailsPage,
+    PeopleDetailsPage,
     HomePage,
     TabsPage
   ],
