@@ -8,8 +8,6 @@
   <ion-list>
     <button class="boutton" ion-item *ngFor="let vehicule of (vehicules | async)?.results" (click)="openDetails(vehicule)">
       {{ vehicule.name }}
-      {{ vehicule.passengers }}
-
     </button>
   </ion-list>
 

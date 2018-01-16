@@ -16,6 +16,7 @@ import { PeopleDetailsPage } from '../pages/peopleDetails/peopleDetails';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {VehiculeDetailsPage} from "../pages/vehiculeDetails/vehiculeDetails";
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     FilmDetailsPage,
     PeopleDetailsPage,
+    VehiculeDetailsPage,
     HomePage,
     TabsPage
   ],
@@ -45,6 +47,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     PeoplePage,
     FilmDetailsPage,
     PeopleDetailsPage,
+    VehiculeDetailsPage,
     HomePage,
     TabsPage
   ],
