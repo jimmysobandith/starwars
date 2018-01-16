@@ -12,7 +12,16 @@ export class PeoplePage {
   peoples: Observable<any>;
  
   constructor(public navCtrl: NavController, public navParams: NavParams, private httpClient: HttpClient) { 
-    this.peoples = this.httpClient.get('https://swapi.co/api/people');  
+
+    
+    if(this.httpClient.get('https://swapi.co/api/peoples'))
+    {
+      this.peoples = this.httpClient.get('https://swapi.co/api/people');
+    }
+    else{
+      console.log("Erreur, aucun contenu");
+    }
+      
   }
 
   openDetails(people) {
