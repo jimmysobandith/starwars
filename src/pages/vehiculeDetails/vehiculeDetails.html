@@ -5,10 +5,17 @@
 </ion-header>
 
 <ion-content padding>
+  <ion-card>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="../../assets/Rebel.jpg"/>
+      </ion-avatar>
   <h1>Nom du véhicule : {{ vehicule.name }}</h1>
+    </ion-item>
+
+    <ion-card-content>
   <p>Nombre de passager : {{ vehicule.passengers }}</p>
   <p>Le pilote attribué au véhicule : {{ vehicule.pilots}}</p>
   <p>L'usine de fabrication : {{ vehicule.manufacturer}}</p>
-
-
-</ion-content>
+  <p> Capacité du cargo : {{ vehicule.cargo_capacity}}</p>
+    </ion-card-content>
