@@ -1,13 +1,24 @@
-import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import 'rxjs/add/operator/map';
 
-@Component({
-  selector: 'page-people-details',
-})
+var tmpPage;
+
+@Injectable()
 export class PeopleMethod {
-  people: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.people = this.navParams.data.vehicule;
+  constructor(public http: HttpClient) {
+    console.log('Hello SwapiProvider Provider');
   }
+
+  listPeople() {
+    let request = `https://swapi.co/api/people/`;
+    return this.http.get(request)
+      .map((res: any) => res.results);
+  }
+
+  getPeople(idPeople) {
+    
+  }
+
 }
