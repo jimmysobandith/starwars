@@ -10,7 +10,7 @@ import { PeopleMethod } from '../../provider/peopleMethod';
   templateUrl: 'people.html',
 })
 export class PeoplePage {
-  peoples: [];
+  peoples: [''];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private httpClient: HttpClient, private PeopleMethod: PeopleMethod) {
     this.PeopleMethod.listPeople().subscribe(data => {
