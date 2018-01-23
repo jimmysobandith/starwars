@@ -3,12 +3,23 @@
     <ion-title>{{ people.name }}</ion-title>
   </ion-navbar>
 </ion-header>
-  
-<ion-content padding>
-  <h1 style="text-align: center;">Nom & Prénom : {{ people.name }}</h1>
+
+<ion-content padding class="personnage">
+  <ion-card>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="../../assets/ST.jpg"/>
+      </ion-avatar>
+  <h1 style="text-align: center;">Nom & Prenom : {{ people.name }}</h1>
+    </ion-item>
+
+    <ion-card-content>
   <p>Taille : {{ people.height }}</p>
   <p>Poid : {{ people.mass }}</p>
   <p>Couleur de cheveu : {{ people.hair_color }}</p>
   <p>Couleur des yeux : {{ people.eye_color }}</p>
   <p>Sexe : {{ people.gender }}</p>
+    </ion-card-content>
+</ion-card>
 </ion-content>
+

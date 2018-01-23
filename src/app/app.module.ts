@@ -14,6 +14,7 @@ import { FilmPage } from '../pages/film/film';
 import { FilmDetailsPage } from '../pages/filmDetails/filmDetails';
 import { PeopleDetailsPage } from '../pages/peopleDetails/peopleDetails';
 
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {VehiculeDetailsPage} from "../pages/vehiculeDetails/vehiculeDetails";
