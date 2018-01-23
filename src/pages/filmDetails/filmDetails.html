@@ -3,9 +3,19 @@
     <ion-title>{{ film.title }}</ion-title>
   </ion-navbar>
 </ion-header>
- 
-<ion-content padding>
-  <h1>Directeur : {{film.director}}</h1>
-  <h2>Producteur: {{ film.producer }}</h2>
-  {{ film.opening_crawl }}
+
+<ion-content padding class="contenus">
+  <ion-card>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="../../assets/lucas.jpg"/>
+      </ion-avatar>
+      <h1 text-wrap>Directeur : Directeur : {{film.director}}</h1>
+    </ion-item>
+
+    <ion-card-content>
+      <p>Producteur: {{ film.producer }}</p>
+      <p>{{ film.opening_crawl }}</p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
