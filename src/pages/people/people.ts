@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Observable } from 'rxjs/Observable';
-import { HttpClient } from '@angular/common/http';
 import { PeopleDetailsPage } from '../peopleDetails/peopleDetails';
 import { PeopleMethod } from '../../provider/peopleMethod';
 
@@ -12,18 +11,32 @@ import { PeopleMethod } from '../../provider/peopleMethod';
 export class PeoplePage {
   peoples: [''];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private httpClient: HttpClient, private PeopleMethod: PeopleMethod) {
-    this.PeopleMethod.listPeople().subscribe(data => {
-        this.peoples = data;
-  });
+  constructor(public navCtrl: NavController, public navParams: NavParams, private PeopleMethod: PeopleMethod) {
+    this.PeopleMethod.listPeople().subscribe(data => 
+    {
+      this.peoples = data;
+    });
   }
 
   openDetails(people) {
     this.navCtrl.push(PeopleDetailsPage, { people: people });
   }
 
-  bouton()
+  bouttonSuivent()
   {
+    this.PeopleMethod.enrSuivente();
+    this.PeopleMethod.listPeople().subscribe(data => 
+    {
+       this.peoples = data;
+    });
+  }
 
+  bouttonPrecedent()
+  {
+    this.PeopleMethod.enrPrecedente();
+    this.PeopleMethod.listPeople().subscribe(data => 
+    {
+       this.peoples = data;
+    });
   }
 }
