@@ -13,6 +13,7 @@ import { PeoplePage } from '../pages/people/people';
 import { FilmPage } from '../pages/film/film';
 import { FilmDetailsPage } from '../pages/filmDetails/filmDetails';
 import { PeopleDetailsPage } from '../pages/peopleDetails/peopleDetails';
+import { PeopleMethod } from '../provider/peopleMethod';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -55,6 +56,7 @@ import {VehiculeDetailsPage} from "../pages/vehiculeDetails/vehiculeDetails";
   providers: [
     StatusBar,
     SplashScreen,
+    PeopleMethod,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
