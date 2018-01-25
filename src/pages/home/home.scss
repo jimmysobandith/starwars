@@ -26,8 +26,7 @@ Police{
     text-align: center;
   }
 
-  .centre{
-  }
+ 
 }
 
 p {
@@ -61,4 +60,19 @@ img {
 .para-1
 {
   margin-top: 150px;
+}
+
+.boutton
+{
+    background-color:rgba(28, 20, 54, 0.13);
+    color:white;
+    text-transform: uppercase;
+    font-weight: 800;
+    display: block;
+  margin : auto;
+  
+}
+.centrer{
+  text-align:center;
+  display:block;
 }
