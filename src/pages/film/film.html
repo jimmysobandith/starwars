@@ -10,7 +10,7 @@
   </ion-navbar>
 </ion-header>
  
-<ion-content padding calss="contenu">
+<ion-content padding class="contenu">
 <ion-list>
   <button class="boutton" ion-item *ngFor="let film of (films | async)?.results" (click)="openDetails(film)">
     {{ film.title }}
