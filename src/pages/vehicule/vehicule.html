@@ -11,11 +11,22 @@
       </ion-card-header>
 
 
-  <ion-list>
-    <button class="boutton" ion-item *ngFor="let vehicule of (vehicules | async)?.results" (click)="openDetails(vehicule)">
-      {{ vehicule.name }}
-    </button>
-  </ion-list>
+      <ion-list>
+        <button class="boutton" ion-item *ngFor="let vehicule of (vehicules | async)?.results" (click)="openDetails(vehicule)">
+          {{ vehicule.name }}
+        </button>
+      </ion-list>
+
+      <div class="center">
+        <button class="boutton-3" (click)="boutonPrecedentVehicule()">
+          Page précédente
+        </button>
+
+        <button class="boutton-2" (click)="boutonSuivantVehicule()">
+          Page suivante
+        </button>
+      </div>
+
     </ion-card>
   </ion-content>
 
