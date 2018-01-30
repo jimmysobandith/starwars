@@ -1,3 +1,9 @@
+/* 
+  * Provider : People 
+  * Description : Page suivente et précente
+  * Developpeur : SOBANDITH Jimmy, PINEAU Tristan, PICHARD Thomas, IHEELILE Zineb
+*/
+
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
@@ -13,11 +19,13 @@ export class PeopleMethod {
     console.log('PROVIDER : People');
   }
 
+  /* FONCTION : Actualisation liste */
   listPeople() {
     return this.http.get(actuel)
       .map((res: any) => res.results);
   }
 
+  /* FONCTION : Page suivente */
   enrSuivente()
   {
     this.http.get(actuel).subscribe((data:any) => 
@@ -36,6 +44,7 @@ export class PeopleMethod {
       });
   }
 
+  /* FONCTION : Page précédente */
   enrPrecedente()
   {
     this.http.get(actuel).subscribe((data:any) => 

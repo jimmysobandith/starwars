@@ -1,3 +1,9 @@
+/* 
+  * Provider : Film 
+  * Description : Mise en place en prévision d'un éventuel ajout de page par l'API
+  * Developpeur : SOBANDITH Jimmy, PINEAU Tristan, PICHARD Thomas, IHEELILE Zineb
+*/
+
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
@@ -9,15 +15,18 @@ var next = 'https://swapi.co/api/people/?page=';
 @Injectable()
 export class FilmMethod {
 
+  /* CONSTRUCTEUR */
   constructor(public http: HttpClient) {
-    console.log('PROVIDER : People');
+    console.log('PROVIDER : Film');
   }
 
+  /* FONCTION : Actualisation liste */
   listPeople() {
     return this.http.get(actuel)
       .map((res: any) => res.results);
   }
 
+  /* FONCTION : Page suivente */
   enrSuivente()
   {
     this.http.get(actuel).subscribe((data:any) => 
@@ -36,6 +45,7 @@ export class FilmMethod {
       });
   }
 
+  /* FONCTION : Page précédente */
   enrPrecedente()
   {
     this.http.get(actuel).subscribe((data:any) => 
