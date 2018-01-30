@@ -5,25 +5,25 @@
   </ion-header>
 
   <ion-content class="contenu">
-    <ion-card>
+  
       <ion-list>
         <button  class="boutton" ion-item *ngFor="let vehicule of vehicules" (click)="openDetails(vehicule)">
           {{ vehicule.name }}
         </button>
       </ion-list>
-
+   
       <div class="center">
-        <button class="boutton-3" (click)="boutonPrecedentVehicule()">
+        <button  ion-button round class="boutton-3" (click)="boutonPrecedentVehicule()">
             <ion-icon name="arrow-dropleft-circle"></ion-icon>
         Back
         </button>
 
-        <button class="boutton-2" (click)="boutonSuivantVehicule()">
+        <button ion-button round class="boutton-2" (click)="boutonSuivantVehicule()">
         Next
         <ion-icon name="arrow-dropright-circle"></ion-icon>
         </button>
       </div>
 
-    </ion-card>
+   
   </ion-content>
 
