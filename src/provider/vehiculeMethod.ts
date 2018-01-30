@@ -3,8 +3,8 @@ import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
 
 var tmpPage = 1;
-var actuel = `https://swapi.co/api/vehicule/`;
-var next = 'https://swapi.co/api/vehicule/?page=';
+var actuel = `https://swapi.co/api/vehicles/`;
+var next = 'https://swapi.co/api/vehicles/?page=';
 
 @Injectable()
 export class VehiculeMethod {
@@ -13,11 +13,13 @@ export class VehiculeMethod {
     console.log('PROVIDER : Vehicule');
   }
 
+  /* FONCTION : Actualisation liste */
   listVehicule() {
     return this.http.get(actuel)
       .map((res: any) => res.results);
   }
 
+  /* FONCTION : Page suivante */
   enrSuivante()
   {
     this.http.get(actuel).subscribe((data:any) =>
@@ -36,6 +38,7 @@ export class VehiculeMethod {
     });
   }
 
+  /* FONCTION : Page précédente */
   enrPrecedente()
   {
     this.http.get(actuel).subscribe((data:any) =>
