@@ -2,7 +2,7 @@ page-people {
 
     .boutton
     {
-        background-color: rgba(255, 255, 255, 0.007);
+        background-color: rgb(255, 255, 255);
         color: black;
         text-transform: uppercase;
         font-weight: 800;
@@ -11,7 +11,7 @@ page-people {
     .boutton-2
     {
         background-color: rgba(255, 0, 0, 0.021);
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         text-transform: uppercase;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -23,7 +23,7 @@ page-people {
     .boutton-3
     {
         background-color: rgba(255, 0, 0, 0.021);
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         text-transform: uppercase;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -44,10 +44,11 @@ page-people {
         text-align: right;
 
     }
-}
+
 .contenu
 {
   background-image: url("../../assets/homeWP.jpg");
   background-size: (100% 100%);
 }
 
+}
