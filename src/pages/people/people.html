@@ -11,14 +11,6 @@
 </ion-header>
  
 <ion-content padding class="contenu">
-    <ion-refresher (ionRefresh)="doRefresh($event)">
-        <ion-refresher-content
-          pullingIcon="arrow-dropdown"
-          pullingText="Pull to refresh"
-          refreshingSpinner="circles"
-          refreshingText="Refreshing...">
-        </ion-refresher-content>
-      </ion-refresher>
 <ion-list>
   <button  class="boutton" ion-item *ngFor="let people of peoples" (click)="openDetails(people)">
     {{ people.name }}
