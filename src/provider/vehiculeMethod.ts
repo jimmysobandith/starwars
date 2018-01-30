@@ -2,15 +2,15 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
 
-var tmpPage = 1
-var actuel = `https://swapi.co/api/people/`;
-var next = 'https://swapi.co/api/people/?page=';
+var tmpPage = 1;
+var actuel = `https://swapi.co/api/vehicule/`;
+var next = 'https://swapi.co/api/vehicule/?page=';
 
 @Injectable()
 export class VehiculeMethod {
 
   constructor(public http: HttpClient) {
-    console.log('PROVIDER : People');
+    console.log('PROVIDER : Vehicule');
   }
 
   listVehicule() {
@@ -18,7 +18,7 @@ export class VehiculeMethod {
       .map((res: any) => res.results);
   }
 
-  enrSuivente()
+  enrSuivante()
   {
     this.http.get(actuel).subscribe((data:any) =>
     {
