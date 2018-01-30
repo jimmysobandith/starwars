@@ -67,14 +67,20 @@ img {
 
 .boutton
 {
-    background-color:rgba(28, 20, 54, 0.13);
-    color:white;
+    background-color: #F9C81D;
+    color:black;
     text-transform: uppercase;
     font-weight: 800;
     display: block;
-  margin : auto;
-  
+    margin : auto;
 }
+
+.boutton:hover
+{
+  background-color: black;
+  color: white;
+}
+
 .centrer{
   text-align:center;
   display:block;
