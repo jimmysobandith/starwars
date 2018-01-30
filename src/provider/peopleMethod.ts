@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
 
-var tmpPage = 2;
+var tmpPage = 1
 var actuel = `https://swapi.co/api/people/`;
 var next = 'https://swapi.co/api/people/?page=';
 
@@ -24,10 +24,10 @@ export class PeopleMethod {
       {
         if(data.next != null)
         {
+          tmpPage = tmpPage + 1;
           var toString = tmpPage.toString();
           actuel = next + toString;
           console.log("actuel : " + actuel);
-          tmpPage = tmpPage + 1;
         }
         else
         {
