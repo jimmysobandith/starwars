@@ -6,13 +6,9 @@
 
   <ion-content class="background">
     <ion-card>
-      <ion-card-header>
-        Voici la liste des différents véhicules de Star Wars :
-      </ion-card-header>
-
 
       <ion-list>
-        <button class="boutton" ion-item *ngFor="let vehicule of (vehicules | async)?.results" (click)="openDetails(vehicule)">
+        <button  class="boutton" ion-item *ngFor="let vehicule of vehicules" (click)="openDetails(vehicule)">
           {{ vehicule.name }}
         </button>
       </ion-list>
