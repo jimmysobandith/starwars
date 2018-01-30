@@ -4,7 +4,7 @@
   </ion-navbar>
 </ion-header>
  
-<ion-content class="background">
+<ion-content padding class="contenu">
     <ion-refresher (ionRefresh)="doRefresh($event)">
         <ion-refresher-content
           pullingIcon="arrow-dropdown"
@@ -14,18 +14,21 @@
         </ion-refresher-content>
       </ion-refresher>
 <ion-list>
-  <button class="boutton" ion-item *ngFor="let people of peoples" (click)="openDetails(people)">
+  <button  class="boutton" ion-item *ngFor="let people of peoples" (click)="openDetails(people)">
     {{ people.name }}
   </button>
 </ion-list>
 
+
 <div class="center">
-  <button class="boutton-3" (click)="bouttonPrecedent()">
-    Page précédente
+  <button  ion-button round class="boutton-3" (click)="bouttonPrecedent()">
+      <ion-icon name="arrow-dropleft-circle"></ion-icon>
+ Back
   </button>
 
-  <button class="boutton-2" (click)="bouttonSuivent()">
-    Page suivante
+  <button  ion-button round class="boutton-2" (click)="bouttonSuivent()">
+      <ion-icon name="arrow-dropright-circle"></ion-icon>
+ Next
   </button>
 </div>
 

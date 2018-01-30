@@ -2,7 +2,7 @@ page-people {
 
     .boutton
     {
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.007);
         color: black;
         text-transform: uppercase;
         font-weight: 800;
@@ -13,10 +13,11 @@ page-people {
         background-color: green;
         color: white;
         text-transform: uppercase;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-right: 70px;
-        padding-left: 70px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 30px;
+        padding-left: 30px;
+        font-size: 15px;
     }
 
     .boutton-3
@@ -24,14 +25,29 @@ page-people {
         background-color: red;
         color: white;
         text-transform: uppercase;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-right: 70px;
-        padding-left: 70px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 30px;
+        padding-left: 30px;
+        font-size: 15px;
     }
 
     .center
     {
         text-align: center;
     }
+    .left{
+        text-align: left;
+
+    }
+    .right{
+        text-align: right;
+
+    }
 }
+.contenu
+{
+  background-image: url("../../assets/homeWP.jpg");
+  background-size: (100% 100%);
+}
+
