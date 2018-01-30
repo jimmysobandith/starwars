@@ -6,12 +6,6 @@
 
   <ion-content class="background">
     <ion-card>
-<<<<<<< HEAD
-=======
-      
-
->>>>>>> master
-
       <ion-list>
         <button  class="boutton" ion-item *ngFor="let vehicule of vehicules" (click)="openDetails(vehicule)">
           {{ vehicule.name }}
@@ -21,11 +15,11 @@
       <div class="center">
         <button class="boutton-3" (click)="boutonPrecedentVehicule()">
             <ion-icon name="arrow-dropleft-circle"></ion-icon>
-   Back
+        Back
         </button>
 
         <button class="boutton-2" (click)="boutonSuivantVehicule()">
-        Next 
+        Next
         <ion-icon name="arrow-dropright-circle"></ion-icon>
         </button>
       </div>
