@@ -1,9 +1,3 @@
-/* 
-  * Provider : People 
-  * Description : Page suivente et précente
-  * Developpeur : SOBANDITH Jimmy, PINEAU Tristan, PICHARD Thomas, IHEELILE Zineb
-*/
-
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
@@ -13,41 +7,38 @@ var actuel = `https://swapi.co/api/people/`;
 var next = 'https://swapi.co/api/people/?page=';
 
 @Injectable()
-export class PeopleMethod {
+export class VehiculeMethod {
 
   constructor(public http: HttpClient) {
     console.log('PROVIDER : People');
   }
 
-  /* FONCTION : Actualisation liste */
-  listPeople() {
+  listVehicule() {
     return this.http.get(actuel)
       .map((res: any) => res.results);
   }
 
-  /* FONCTION : Page suivente */
   enrSuivente()
   {
-    this.http.get(actuel).subscribe((data:any) => 
+    this.http.get(actuel).subscribe((data:any) =>
+    {
+      if(data.next != null)
       {
-        if(data.next != null)
-        {
-          tmpPage = tmpPage + 1;
-          var toString = tmpPage.toString();
-          actuel = next + toString;
-          console.log("actuel : " + actuel);
-        }
-        else
-        {
-          console.log("Next = null");
-        }
-      });
+        tmpPage = tmpPage + 1;
+        var toString = tmpPage.toString();
+        actuel = next + toString;
+        console.log("actuel : " + actuel);
+      }
+      else
+      {
+        console.log("Next = null");
+      }
+    });
   }
 
-  /* FONCTION : Page précédente */
   enrPrecedente()
   {
-    this.http.get(actuel).subscribe((data:any) => 
+    this.http.get(actuel).subscribe((data:any) =>
     {
       if(data.previous != null)
       {
@@ -61,6 +52,6 @@ export class PeopleMethod {
         console.log("Next = null");
       }
     });
-    
+
   }
 }

@@ -14,6 +14,8 @@ import { FilmPage } from '../pages/film/film';
 import { FilmDetailsPage } from '../pages/filmDetails/filmDetails';
 import { PeopleDetailsPage } from '../pages/peopleDetails/peopleDetails';
 import { PeopleMethod } from '../provider/peopleMethod';
+import { FilmMethod } from '../provider/filmMethod';
+import { VehiculeMethod } from '../provider/VehiculeMethod';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -56,6 +58,8 @@ import {VehiculeDetailsPage} from "../pages/vehiculeDetails/vehiculeDetails";
     StatusBar,
     SplashScreen,
     PeopleMethod,
+    FilmMethod,
+    VehiculeMethod,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

@@ -1,6 +1,6 @@
 /* 
-  * Provider : People 
-  * Description : Page suivente et précente
+  * Provider : Film 
+  * Description : Mise en place en prévision d'un éventuel ajout de page par l'API
   * Developpeur : SOBANDITH Jimmy, PINEAU Tristan, PICHARD Thomas, IHEELILE Zineb
 */
 
@@ -13,10 +13,11 @@ var actuel = `https://swapi.co/api/people/`;
 var next = 'https://swapi.co/api/people/?page=';
 
 @Injectable()
-export class PeopleMethod {
+export class FilmMethod {
 
+  /* CONSTRUCTEUR */
   constructor(public http: HttpClient) {
-    console.log('PROVIDER : People');
+    console.log('PROVIDER : Film');
   }
 
   /* FONCTION : Actualisation liste */
